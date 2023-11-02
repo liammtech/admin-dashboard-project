@@ -191,20 +191,30 @@ button {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px;
     padding: 10px 20px 10px 20px;
     display: grid;
+}
+
+#announcements-card {
+    grid-template: repeat(3, 1fr) / 1fr;
     > div > h4 {
         margin-block-start: 0.8em;
     }
     > div > p {
         font-style: italic ;
-        margin-block-start: 0.5em;;
+        margin-block-start: 0.5em;
         color: rgb(150, 150, 150);
     }
 }
 
-#announcements-card {
-    grid-template: repeat(3, 1fr) / 1fr
-}
-
 .line-underneath {
     border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+#trending-card {
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 3fr;
+    align-items: center;
+    > div > p {
+        font-style: italic ;
+        color: rgb(150, 150, 150);
+        font-size: small;
+    }
 }
