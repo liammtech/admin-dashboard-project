@@ -5,7 +5,7 @@ body {
     color: #FAF9F6;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin-block-start: 0.1em;
     margin-block-end: 0;
 }
@@ -52,10 +52,22 @@ svg {
 }
 
 .header-upper-grid {
+    height: 90px;
+    box-sizing: border-box;
     display: grid;
     grid-template: 1fr / 50px 1fr 80px 80px 200px;
     align-items: center;
-    padding: 15px;
+    padding: 0px 15px 0px 15px;
+    color: rgb(75, 75, 75);
+}
+
+.header-lower-grid {
+    height: 110px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 1fr 1fr / 80px 1fr 200px 200px 200px;
+    align-items: center;
+    padding: 0px 28px 28px 28px;
     color: rgb(75, 75, 75);
 }
 
@@ -72,4 +84,36 @@ svg {
     height: 60px;
     width: 60px;
     border-radius: 50%;
+}
+
+.user-icon-larger {
+    grid-row-start: span 2;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.greeting, .greeting-name {
+    margin-block-start: 0;
+    margin-inline-start: 25px;
+}
+
+
+.greeting-name {
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: self-start;
+}
+.greeting {
+    align-self: self-end;
+}
+
+button {
+    grid-row: span 2;
+    height: 50px;
+    font-family: Axiforma;
+    color: #FAF9F6;
+    background-color: rgb(97, 173, 173);
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
 }
