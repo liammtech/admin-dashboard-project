@@ -154,7 +154,10 @@ button {
 }
 
 #announcements, #trending {
-    padding: 20px 28px 20px 28px;
+    padding: 20px 36px 20px 0px;
+    display: grid;
+    gap: 28px;
+    grid-template: 34px 1fr / 1fr;
 }
 
 #your-projects-title {
@@ -179,4 +182,13 @@ button {
     display: flex;
     justify-content: end;
     gap: 20px
+}
+
+#announcements-card, #trending-card {
+    background-color: #FAF9F6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px;
+    padding: 10px 20px 10px 20px;
+    display: grid;
 }
