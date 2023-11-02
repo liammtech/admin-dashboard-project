@@ -49,8 +49,27 @@ svg {
     align-items: center;
     margin-block-start: 3em;
     margin-block-end: 4em;
-    > svg {
-        margin-left: auto;
-        margin-right: auto;
-    }
+}
+
+.header-upper-grid {
+    display: grid;
+    grid-template: 1fr / 50px 1fr 80px 80px 200px;
+    align-items: center;
+    padding: 15px;
+    color: rgb(75, 75, 75);
+}
+
+#searchbar {
+    background-color: rgb(226, 226, 226);
+    box-shadow: rgb(174, 175, 177) 0px 2px 2px inset;
+    height: 32px;
+    width: 750px;
+    border: none;
+    border-radius: 16px;
+}
+
+.user-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
